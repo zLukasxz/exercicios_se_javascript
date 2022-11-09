@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <h1>Cálculo com Função SE</h1><br>
+    <h4>Leia dois números e verifique: qual é o menor e qual é o maior.</h4>
+    <div id="calculo"></div>
+    <script>
+        let num1 = Number(prompt("Digite o primeiro número."));
+        let num2 = Number(prompt("Digite o segundo número."));
+
+        if (num1 > num2) {
+            document.getElementById("calculo").innerHTML = "O número " + num1 + " é maior que " + num2 + ".";   
+        } else {
+            document.getElementById("calculo").innerHTML = "O número " + num2 + " é maior que " + num1 + ".";  
+        }
+    </script>
+</body>
+</html>
+
+<!--
+<script>
+    let num1 = Number(prompt("Digite o primeiro número."));
+    let num2 = Number(prompt("Digite o segundo número."));
+    let resul;
+    if (num1 > num2){
+        resul = "O número " + num1 + " é maior que " + num2;
+        document.getElementById("calculo").innerHTML = resul;
+    }else{
+        resul = "O número " + num2 + " é maior que " + num1;
+        document.getElementById("calculo").innerHTML = resul;
+    }
+</script>
+    ______________________________________________________________
+
+    if (num1 > num2){
+        resul = "O número " + num1 + " é maior que " + num2;
+    }else{
+        resul = "O número " + num2 + " é maior que " + num1;
+    }
+    document.getElementById("calculo").innerHTML = resul;
+</script>
+-->

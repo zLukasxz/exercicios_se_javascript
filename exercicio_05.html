@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+</head>
+<body>
+    <h1>Cálculo com Função SE</h1><br>
+    <h4>Leia dois valores e depois mostre a diferença entre eles.</h4><br>
+    <div id="calculo"></div>
+    <script>
+        let num1 = Number(prompt("Digite a Primeira Varíavel"));
+        let num2 = Number(prompt("Digite a segunda variável."));
+        let resultado;
+        if (num1 > num2){
+        resultado = num1 - num2
+        resul = "A diferença entre " + num1 + " e " + num2 + " é de " + resultado + ".";
+    }else{
+        resultado = num2 - num1
+        resul = "A diferença entre " + num1 + " e " + num2 + " é de " + resultado + ".";
+    }
+    document.getElementById("calculo").innerHTML = resul;
+
+    </script>
+</body>
+</html>

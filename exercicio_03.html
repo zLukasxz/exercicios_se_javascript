@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    <h1>Cálculo com Função SE</h1><br>
+    <h4>Leia os anos de nascimento de duas pessoas e depois calcule suas idades. Em seguida, imprima o nome e a idade de cada uma delas e indique qual delas é a mais nova.</h4><br>
+    <div id="calculo"></div>
+    <script>
+        let nome1 = prompt("Digite o nome da primeira pessoa.");
+        let anonascimento1 = Number(prompt("Digite o ano de nascimento da primeira pessoa."));
+        let nome2 = prompt("Digite o nome da segunda pessoa.")
+        let anonascimento2 = Number(prompt("Digite o ano de nascimento da segunda pessoa."))
+        let anoatual = Number(2022);
+        let idade1 = Number(anoatual) - Number(anonascimento1);
+        let idade2 = Number(anoatual) - Number(anonascimento2);
+
+        if (idade1 > idade2){
+        resul = nome1 + " tem "+ idade1 + " anos, enquanto " + nome2 + " tem " + idade2 + " anos. " + "<br>A pessoa mais nova entre os dois é " + nome2 + ", com " + idade2 + " anos.";
+    }else{
+        resul = nome1 + " tem "+ idade1 + " anos, enquanto " + nome2 + " tem " + idade2 + " anos. " + "<br>A pessoa mais nova entre os dois é " + nome1 + ", com " + idade1 + " anos.";
+    }
+    document.getElementById("calculo").innerHTML = resul;
+
+    </script>
+</body>
+</html>
